@@ -52,7 +52,8 @@ namespace EmailTemplateGenerator
                 return; //Exit program. 
             }
             
-        
+            }
         }
+    
     }
 }

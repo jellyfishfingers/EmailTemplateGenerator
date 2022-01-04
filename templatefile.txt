@@ -1,1 +1,5 @@
 I am the template file.
+
+Event Name: @EventName
+Event Date: @EventDate 
+Event Time: @EventTime

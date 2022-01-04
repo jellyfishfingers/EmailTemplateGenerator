@@ -5,6 +5,8 @@ namespace EmailTemplateGenerator
 {
     class Program
     {
+     
+
         static void Menu()
         {
             Console.WriteLine("Welcome to the application.");
@@ -27,15 +29,29 @@ namespace EmailTemplateGenerator
 
         static void Main(string[] args)
         {
-            string templatefile = System.IO.File.ReadAllText(@"templatefile.txt");
+            string templateFile = System.IO.File.ReadAllText(@"templatefile.txt");
 
             Menu();
             string input = Console.ReadLine();
+            
+            while (input != "e") {
             if (input=="1") 
             {
-                Console.WriteLine(templatefile);
+                Console.WriteLine("What is your event's name?");
+                string eventName = Console.ReadLine();
+                Console.WriteLine("What is your event's time?");
+                string eventTime = Console.ReadLine();
+
+                templateFile = templateFile.Replace("@EventName", eventName).Replace("@EventDate","eventTime");
+
+                Console.WriteLine(templateFile);
                 CreateFile();   
             }
+            else 
+            {
+                return; //Exit program. 
+            }
+            
         
         }
     }

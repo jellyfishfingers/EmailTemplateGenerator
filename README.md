@@ -18,3 +18,6 @@ The Email template will be generated in TXT format.
 Console Application built in C#. 
 
 Future plans: Windows Form for better GUI.
+
+# Additional Notes:
+I also created this project to assist me to having better understanding of the .Net Framework.

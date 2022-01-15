@@ -1,0 +1,5 @@
+I am the template file.
+
+Event Name: Test Event
+Event Date: 12/1/2021 
+Event Time: 1pm

@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="templatefile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
